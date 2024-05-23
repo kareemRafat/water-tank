@@ -3,15 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 
 Route::view('/', 'welcome')->name('home');
 Route::view('/about', 'about')->name('about');
 Route::view('/services', 'services')->name('services');
 Route::view('/contact', 'contact')->name('contact');
 
-Route::get('my-service' , function(){
-    return view('user_services');
-})->name('user_service');
+Route::middleware('auth')->group(function () {
+    Route::get('my-service', [ServiceController::class, 'service'])->name('user_service');
+    Route::post('my-service', [ServiceController::class, 'request_service'])->name('request_service');
+});
 
 // authentication
 Route::controller(AuthController::class)->group(function () {
@@ -23,6 +25,7 @@ Route::controller(AuthController::class)->group(function () {
     });
     Route::get('/logout', 'logout')->name('auth.logout')->middleware('auth');
 });
+
 
 
 

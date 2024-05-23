@@ -4,177 +4,129 @@
         <!-- Hero Section -->
         <section id="hero" class="hero section">
 
-          <div class="info d-flex align-items-center">
-            <div class="container">
-              <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="col-lg-6 text-center">
-                  <h2 class="">اهلا بك فى موقع <br> خزان مياه | Water Tank </h2>
-                  <p style="text-align: justify;" dir="rtl">مرحباً بكم في موقعنا المتخصص في خدمات ملء خزانات المياه، حيث نقدم لكم حلولاً سريعة وموثوقة لتلبية احتياجاتكم من المياه النقية. سواء كنتم بحاجة إلى ملء خزانات المنازل، الشركات، أو المنشآت الصناعية، فإن فريقنا المحترف مجهز بأحدث التقنيات لضمان خدمة عالية الجودة. نسعى دائماً لتوفير المياه بكفاءة وأمان، مع مراعاة أعلى معايير الصحة والنظافة.</p>
-                  <a href="{{ route('about') }}" class="btn-get-started">قراءة المزيد</a>
+            <div class="info d-flex align-items-center">
+                <div class="container">
+                    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-6 text-center">
+                            <h2 class="">اهلا بك فى موقع <br> خزان مياه | Water Tank </h2>
+                            <p style="text-align: justify;" dir="rtl">مرحباً بكم في موقعنا المتخصص في خدمات ملء
+                                خزانات المياه، حيث نقدم لكم حلولاً سريعة وموثوقة لتلبية احتياجاتكم من المياه النقية.
+                                سواء كنتم بحاجة إلى ملء خزانات المنازل، الشركات، أو المنشآت الصناعية، فإن فريقنا المحترف
+                                مجهز بأحدث التقنيات لضمان خدمة عالية الجودة. نسعى دائماً لتوفير المياه بكفاءة وأمان، مع
+                                مراعاة أعلى معايير الصحة والنظافة.</p>
+                            <a href="{{ route('about') }}" class="btn-get-started">قراءة المزيد</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="section-fqREP4OWmC-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-            <div class="carousel-item">
-              <img src="{{ asset('assets/img/tank1.jpg') }}" alt="">
             </div>
 
-            <div class="carousel-item active">
-                <img src="{{ asset('assets/img/tank2.jpg') }}" alt="">
+            <div id="section-fqREP4OWmC-carousel" class="carousel slide" data-bs-ride="carousel"
+                data-bs-interval="5000">
+
+                <div class="carousel-item">
+                    <img src="{{ asset('assets/img/tank1.jpg') }}" alt="">
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="{{ asset('assets/img/tank2.jpg') }}" alt="">
+                </div>
+
+
+                <a class="carousel-control-prev" href="#section-fqREP4OWmC-carousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#section-fqREP4OWmC-carousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
             </div>
-
-
-            <a class="carousel-control-prev" href="#section-fqREP4OWmC-carousel" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-            </a>
-
-            <a class="carousel-control-next" href="#section-fqREP4OWmC-carousel" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-            </a>
-
-          </div>
 
         </section><!-- /Hero Section -->
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section">
 
-          <!-- Section Title -->
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Testimonials</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-          </div><!-- End Section Title -->
+        <!-- Constructions Section -->
+        <section id="constructions" class="constructions section" dir="rtl">
 
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2 class="">الخدمات المقدمة</h2>
+                <p>مرحباً بكم في موقعنا المتخصص في خدمات ملء خزانات المياه، حيث نلتزم بتقديم حلول متكاملة لتلبية كافة احتياجاتكم من المياه النظيفة والنقية. </p>
+            </div><!-- End Section Title -->
 
-            <div class="swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "breakpoints": {
-                    "320": {
-                      "slidesPerView": 1,
-                      "spaceBetween": 40
-                    },
-                    "1200": {
-                      "slidesPerView": 2,
-                      "spaceBetween": 20
-                    }
-                  }
-                }
-              </script>
-              <div class="swiper-wrapper">
+            <div class="container">
 
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial-item">
-                      <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
+                <div class="row gy-4">
 
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial-item">
-                      <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-item">
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="card-bg"><img src="assets/img/constructions-1.jpg" alt=""></div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">ملء خزانات الشركات والمكاتب</h4>
+                                        <p>ندرك أهمية المياه في بيئة العمل، ولهذا نوفر حلولاً مخصصة لملء خزانات المياه في الشركات والمكاتب. خدماتنا تضمن توفر المياه اللازمة للموظفين والعملاء، مما يعزز من بيئة العمل الصحية والمنتجة
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Card Item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial-item">
-                      <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-item">
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="card-bg"><img src="assets/img/constructions-2.jpg" alt=""></div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">ملء خزانات المنشآت الصناعية </h4>
+                                        <p>نمتلك الخبرة والتقنيات اللازمة لتلبية احتياجات المنشآت الصناعية من المياه. سواء كانت لأغراض الإنتاج أو التبريد أو التنظيف، نحن نوفر إمدادات المياه بكميات كبيرة وبأعلى معايير الجودة لضمان سير عملياتكم الصناعية بسلاسة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Card Item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial-item">
-                      <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                      <h3>Matt Brandon</h3>
-                      <h4>Freelancer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-item">
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="card-bg"><img src="assets/img/constructions-3.jpg" alt=""></div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">ملء خزانات المنازل</h4>
+                                        <p>نحن نقدم خدمات ملء خزانات المياه للمنازل، مما يضمن توفر المياه النقية والصالحة للشرب والاستخدام اليومي. فريقنا يصل إلى منزلكم في الوقت المحدد، ويقوم بملء الخزانات بكفاءة لضمان استمرارية إمداد المياه بدون أي انقطاع</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Card Item -->
 
-                <div class="swiper-slide">
-                  <div class="testimonial-wrap">
-                    <div class="testimonial-item">
-                      <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>
-                        <i class="bi bi-quote quote-icon-left"></i>
-                        <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                        <i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-item">
+                            <div class="row">
+                                <div class="col-xl-5">
+                                    <div class="card-bg"><img src="assets/img/constructions-4.jpg" alt=""></div>
+                                </div>
+                                <div class="col-xl-7 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h4 class="card-title">خدمات الطوارئ والتوصيل السريع</h4>
+                                        <p>في حالات الطوارئ، نقدم خدمات التوصيل السريع لملء خزانات المياه، مما يضمن توفر المياه في الأوقات الحرجة. سواء كانت حالات انقطاع المياه المفاجئ أو الحاجة الملحة للمياه، فإن فريقنا جاهز للاستجابة السريعة وتلبية احتياجاتكم فوراً</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Card Item -->
 
-              </div>
-              <div class="swiper-pagination"></div>
+                </div>
             </div>
-
-          </div>
-
-        </section><!-- /Testimonials Section -->
-
-      </main>
+        </section><!-- /Constructions Section -->
+    </main>
 </x-main-layouts>

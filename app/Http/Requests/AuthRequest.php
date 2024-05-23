@@ -34,8 +34,10 @@ class AuthRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'fname.required' => "  الإسم مطلوب",
+            'name.required' => "  الإسم مطلوب",
             'email.required' => "  الإيميل  مطلوب",
+            'password.required' => "  كلمة المرور  مطلوبة",
+            'password.confirmed' => "  كلمات المرور غير متطابقة",
             'address.required' => "  اسم الإبن مطلوب",
             'capacity.required' => "  السعة التخزينية مطلوبة",
             'service_type.required' => "  نوع الخدمة مطلوب",

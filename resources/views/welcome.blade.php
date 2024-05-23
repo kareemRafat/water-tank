@@ -64,7 +64,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg"><img src="assets/img/constructions-1.jpg" alt=""></div>
+                                    <div class="card-bg"><img src="{{ asset('assets/img/tank7.jpg') }}" alt=""></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
@@ -81,7 +81,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg"><img src="assets/img/constructions-2.jpg" alt=""></div>
+                                    <div class="card-bg"><img src="{{ asset('assets/img/tank6.jpg') }}" alt=""></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
@@ -97,7 +97,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg"><img src="assets/img/constructions-3.jpg" alt=""></div>
+                                    <div class="card-bg"><img src="{{ asset('assets/img/tank4.jpg') }}" alt=""></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">
@@ -113,7 +113,7 @@
                         <div class="card-item">
                             <div class="row">
                                 <div class="col-xl-5">
-                                    <div class="card-bg"><img src="assets/img/constructions-4.jpg" alt=""></div>
+                                    <div class="card-bg"><img src="{{ asset('assets/img/tank5.jpg') }}" alt=""></div>
                                 </div>
                                 <div class="col-xl-7 d-flex align-items-center">
                                     <div class="card-body">

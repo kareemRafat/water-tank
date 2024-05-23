@@ -71,7 +71,7 @@
 
   {{ $slot }}
 
-  <footer id="footer" class="footer">
+  <footer id="footer" class="footer" dir="rtl">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -80,12 +80,12 @@
             <span class="sitename">Water Tank | خــزان مــيــاه</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>حــفــر الــبــاطــن</p>
-            <p>المملكة العربية السعودية</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>0966265987223</span></p>
-            <p><strong>Email:</strong> <span>info@watertank.com</span></p>
+            <p class="fs-5">حــفــر الــبــاطــن</p>
+            <p class="fs-5">المملكة العربية السعودية</p>
+            <p class="mt-3 fs-5"><strong>Phone:</strong> <span>0966265987223</span></p>
+            <p class="fs-5"><strong>Email:</strong> <span>info@watertank.com</span></p>
           </div>
-          <div class="social-links d-flex mt-4">
+          <div class="social-links d-flex mt-4 ">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
@@ -93,47 +93,16 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+        <div class="col-lg-8 col-md-3 footer-links fs-5">
+          <h4 class="fs-5">تم العمل على هذا المشروع تحت اشراف </h4>
+          <h4 class="fs-5">الدكتور حسين الهاشم بالكلية التقنية بحفر الباطن </h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
+            <li>الطلاب : </li>
+            <li><a href="#">سلطان عبدالله الحربي</a></li>
+            <li><a href="#">عبدالله احمد الشمري</a></li>
+            <li><a href="#">فايز صالح الحمياني</a></li>
+            <li><a href="#">عبدالمحسن سعد الشمري</a></li>
           </ul>
         </div>
 

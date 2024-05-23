@@ -1,5 +1,5 @@
  <!-- Page Title -->
- <div class="page-title" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);" dir="rtl">
+ <div class="page-title" data-aos="fade" style="background-image: url({{ asset('assets/img/tank4.jpg') }});" dir="rtl">
     <div class="container position-relative">
         <h1>{{ $slot }}</h1>
         <nav class="breadcrumbs">

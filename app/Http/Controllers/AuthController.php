@@ -33,6 +33,9 @@ class AuthController extends Controller
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required'],
+        ] , [
+            'email.required' => "  الإيميل  مطلوب",
+            'password.required' => "  كلمة المرور  مطلوبة",
         ]);
 
         if (Auth::attempt($credentials)) {
@@ -42,7 +45,7 @@ class AuthController extends Controller
         }
 
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
+            'email' => 'يوجد خطأ بالبيانات المدخلة يرجى اعادة المحاولة',
         ])->onlyInput('email');
     }
 

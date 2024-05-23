@@ -25,48 +25,64 @@
 
                                     <div class="col-md-6">
                                         <input type="text" name="name" class="form-control"
-                                            placeholder="الإسم" required="">
+                                            placeholder="الإسم" value="{{ old('name') }}">
+                                            @error('name')
+                                                <div class="text-danger mt-1">{{ $message }}</div>
+                                            @enderror
                                     </div>
+
 
                                     <div class="col-md-6 ">
                                         <input type="email" class="form-control" name="email"
-                                            placeholder="البريد الإلكتروني" required="">
+                                            placeholder="البريد الإلكتروني" value="{{ old('email') }}">
+                                            @error('email')
+                                                <div class="text-danger mt-1">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="col-md-6 ">
                                         <input type="password" class="form-control" name="password"
-                                            placeholder="كلمة المرور" required="">
+                                            placeholder="كلمة المرور ">
+                                            @error('password')
+                                                <div class="text-danger mt-1">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="col-md-6 ">
                                         <input type="password" class="form-control" name="password_confirmation"
-                                            placeholder="تأكيد كلمة المرور" required="">
+                                            placeholder="تأكيد كلمة المرور">
                                     </div>
 
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control" name="address" placeholder="العنوان"
-                                            required="">
+                                        <input type="text" class="form-control" name="address" placeholder="العنوان" value="{{ old('address') }}"
+                                        >
+                                            @error('address')
+                                                <div class="text-danger mt-1">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="col-md-12">
-                                        <input type="text" class="form-control" name="capacity" placeholder="السعة التخزينية لخزان المياة"
-                                            required="">
+                                        <input type="text" class="form-control" name="capacity" placeholder="السعة التخزينية لخزان المياة" value="{{ old('capacity') }}"
+                                        >
+                                            @error('capacity')
+                                                <div class="text-danger mt-1">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
                                     <div class="col-md-12">
                                         <select class="form-control" name="service_type">
-                                            <option>نوع الخدمة المطلوبة</option>
+                                            <option value="">نوع الخدمة المطلوبة</option>
                                             <option value="منزلي">منزلي</option>
                                             <option value="تجاري">تجاري</option>
                                             <option value="صناعي">صناعي</option>
                                         </select>
+                                            @error('service_type')
+                                                <div class="text-danger mt-1">{{ $message }}</div>
+                                            @enderror
                                     </div>
 
 
                                     <div class="col-md-12 text-center">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">تم ارسال رسالتك بنجاح  - شكرا لك </div>
 
                                         <button type="submit">تسجيل</button>
                                     </div>

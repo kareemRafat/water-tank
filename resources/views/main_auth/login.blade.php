@@ -25,14 +25,20 @@
                                     <div>
                                         <div class="col-md-6 ">
                                             <input type="email" class="form-control" name="email"
-                                                placeholder="البريد الإلكتروني" required="">
+                                                placeholder="البريد الإلكتروني" value="{{ old('email') }}" >
+                                                @error('email')
+                                                    <div class="text-danger mt-1">{{ $message }}</div>
+                                                @enderror
                                         </div>
                                     </div>
 
                                     <div>
                                         <div class="col-md-6 ">
                                             <input type="password" class="form-control" name="password"
-                                                placeholder="كلمة المرور" required="">
+                                                placeholder="كلمة المرور" >
+                                                @error('password')
+                                                    <div class="text-danger mt-1">{{ $message }}</div>
+                                                @enderror
                                         </div>
                                     </div>
 

@@ -77,6 +77,8 @@
 
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script>
         function startProgress() {
             let indicator = document.getElementById("indicator");
@@ -94,16 +96,30 @@
                         width++;
                         indicator.style.left = width + "%";
                         if (width == 60) {
-                            alertDiv.innerText = 'يرجى العلم ان سعة الخزان قد اصبحت 60% ';
-                            alertDiv.classList.add('alert-warning')
+                            Swal.fire({
+                                title: 'تحذير!',
+                                text: 'يرجى العلم ان سعة الخزان قد اصبحت 60% من السعة التخزينية ',
+                                icon: 'warning',
+                                confirmButtonText: 'OK'
+                            })
                         }
                         if (width == 90) {
-                            alertDiv.innerText = 'يرجى العلم ان سعة الخزان قد اصبحت 90% ';
-                            alertDiv.classList.add('alert-danger')
+
+                            Swal.fire({
+                                title: 'تحذير!',
+                                text: 'يرجى العلم ان سعة الخزان قد اصبحت 90% من السعة التخزينية ',
+                                icon: 'warning',
+                                confirmButtonText: 'OK'
+                            })
                         }
 
                         if (width == 100) {
-                            // document.querySelector("#indicator i").style.display = 'none';
+                            Swal.fire({
+                                title: 'تحذير!',
+                                text: 'يرجى العلم ان سعة الخزان قد فرغت بشكل كامل .. يرجى الاتصال بمزود حدمة لإعادة ملئ الخزان',
+                                icon: 'error',
+                                confirmButtonText: 'OK'
+                            })
                         }
                     }
                 }
